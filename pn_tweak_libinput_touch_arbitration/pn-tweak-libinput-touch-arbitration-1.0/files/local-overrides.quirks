@@ -1,0 +1,7 @@
+# downloaded from https://gitlab.com/hrdl/pinenote-shared/-/blob/main/etc/libinput/local-overrides.quirks
+# install to /etc/libinput/
+[PineNote]
+MatchName=cyttsp5
+AttrPalmPressureThreshold=28
+AttrThumbPressureThreshold=27
+AttrSizeHint=210x157

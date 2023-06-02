@@ -1,0 +1,3 @@
+files/81-libinput-pinenote.rules /etc/udev/rules.d/
+files/local-overrides.quirks /etc/libinput/
+

@@ -1,0 +1,19 @@
+Source: pn-tweak-libinput-touch-arbitration
+Section: unknown
+Priority: optional
+Maintainer: Maximilian Weigand <mweigand@koko>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/pn-tweak-libinput-touch-arbitration
+#Vcs-Git: https://salsa.debian.org/debian/pn-tweak-libinput-touch-arbitration.git
+
+Package: pn-tweak-libinput-touch-arbitration
+Architecture: all
+Depends:
+ ${misc:Depends},
+ libinput-bin (>= 1.23.0-1)
+Description: <insert up to 60 chars description>
+ <Insert long description, indented with spaces.>
