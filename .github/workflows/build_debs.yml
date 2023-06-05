@@ -40,4 +40,4 @@ jobs:
         with:
           draft: true
           files: |
-            artifacts/PineNote-Tweaks/*.deb
+            artifacts/PineNote-Tweaks/*
