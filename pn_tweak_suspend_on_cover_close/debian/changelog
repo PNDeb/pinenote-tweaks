@@ -1,0 +1,11 @@
+pn-suspend-on-cover (1.1) UNRELEASED; urgency=medium
+
+  * use systemctl suspend to go to sleep
+
+ -- Maximilian Weigand <mweigand@koko>  Sun, 28 May 2023 19:17:39 +0200
+
+pinenote-suspend-on-cover (1.0) UNRELEASED; urgency=medium
+
+  * Initial release.
+
+ -- Maximilian Weigand <mweigand@koko>  Sun, 28 May 2023 19:17:39 +0200

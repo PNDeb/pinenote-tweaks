@@ -1,0 +1,8 @@
+[Unit]
+Description=
+
+[Service]
+ExecStart=/usr/bin/pinenote_sleep_on_cover_close.sh
+
+[Install]
+WantedBy=multi-user.target
