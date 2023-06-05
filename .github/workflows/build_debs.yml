@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Install dependencies
-      run: sudo apt -y update && sudo apt install build-essential devscripts
+      run: sudo apt -y update && sudo apt install build-essential devscripts debhelper-compat
 
     - name: Build
       run: ./build_all.sh
