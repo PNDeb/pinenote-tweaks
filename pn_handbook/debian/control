@@ -1,0 +1,19 @@
+Source: pn-handbook
+Section: unknown
+Priority: optional
+Maintainer: Maximilian Weigand <mweigand@koko>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/pn-handbook
+#Vcs-Git: https://salsa.debian.org/debian/pn-handbook.git
+
+Package: pn-handbook
+Architecture: all
+Depends:
+ ${misc:Depends},
+ firefox-esr
+Description: <insert up to 60 chars description>
+ <Insert long description, indented with spaces.>

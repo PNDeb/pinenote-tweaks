@@ -21,6 +21,10 @@ cd pn_default_xpp_config
 dpkg-buildpackage -us -uc
 cd ..
 
+cd pn_handbook
+dpkg-buildpackage -us -uc
+cd ..
+
 # ########################################################################## #
 # Move packages to release subdirectory
 
