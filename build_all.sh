@@ -13,6 +13,14 @@ cd pn_tweak_suspend_on_cover_close
 dpkg-buildpackage -us -uc
 cd ..
 
+cd pn_default_documents
+dpkg-buildpackage -us -uc
+cd ..
+
+cd pn_default_xpp_config
+dpkg-buildpackage -us -uc
+cd ..
+
 # ########################################################################## #
 # Move packages to release subdirectory
 
