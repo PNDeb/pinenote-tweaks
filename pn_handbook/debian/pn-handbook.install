@@ -1,3 +1,4 @@
 files/etc/skel/.config/autostart/greeter.desktop /etc/skel/.config/autostart/
 files/etc/greeter/* /etc/greeter/
 files/usr/share/applications/pnhelp.desktop /usr/share/applications/
+files/etc/skel/.config/pinenote/do_not_show_overview /etc/skel/.config/pinenote/
