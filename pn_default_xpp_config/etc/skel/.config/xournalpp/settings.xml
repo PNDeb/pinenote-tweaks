@@ -158,11 +158,11 @@
   </data>
   <data name="deviceClasses">
     <data name="Evsieve Virtual Device">
-      <attribute name="deviceClass" type="int" value="2"/>
+      <attribute name="deviceClass" type="int" value="0"/>
       <attribute name="deviceSource" type="int" value="1"/>
     </data>
     <data name="Evsieve Virtual Device (Eraser)">
-      <attribute name="deviceClass" type="int" value="3"/>
+      <attribute name="deviceClass" type="int" value="0"/>
       <attribute name="deviceSource" type="int" value="2"/>
     </data>
     <data name="Wayland Pointer">
@@ -186,7 +186,7 @@
       <attribute name="deviceSource" type="int" value="2"/>
     </data>
     <data name="w9013 2D1F:0095 Stylus">
-      <attribute name="deviceClass" type="int" value="0"/>
+      <attribute name="deviceClass" type="int" value="2"/>
       <attribute name="deviceSource" type="int" value="1"/>
     </data>
     <data name="w9013 2D1F:0095 Stylus (Eraser)">
