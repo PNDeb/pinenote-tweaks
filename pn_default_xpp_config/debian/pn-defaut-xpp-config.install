@@ -1,3 +1,4 @@
 etc/profile.d/add_user_bin.sh /etc/profile.d/
 etc/skel/bin/* /etc/skel/bin/
 etc/skel/.config/xournalpp/settings.xml /etc/skel/.config/xournalpp/
+etc/skel/.config/xournalpp/toolbar.ini /etc/skel/.config/xournalpp/

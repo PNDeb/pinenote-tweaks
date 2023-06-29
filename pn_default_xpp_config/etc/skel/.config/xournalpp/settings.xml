@@ -69,7 +69,7 @@
   <property name="snapGridSize" value="14.17"/>
   <property name="strokeRecognizerMinSize" value="40"/>
   <property name="touchDrawing" value="false"/>
-  <property name="gtkTouchInertialScrolling" value="true"/>
+  <property name="gtkTouchInertialScrolling" value="false"/>
   <property name="pressureGuessing" value="false"/>
   <property name="selectionBorderColor" value="4294901760"/>
   <property name="backgroundColor" value="4292664021"/>

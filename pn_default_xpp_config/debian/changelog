@@ -1,5 +1,5 @@
-pn-defaut-xpp-config (1.0) UNRELEASED; urgency=medium
+pn-defaut-xpp-config (1.0+nmu1) unstable; urgency=medium
 
   * Initial release.
 
- -- Maximilian Weigand <mweigand@koko>  Tue, 06 Jun 2023 13:13:12 +0200
+ -- Maximilian Weigand <mweigand@mweigand.net>  Thu, 29 Jun 2023 14:26:55 +0200
