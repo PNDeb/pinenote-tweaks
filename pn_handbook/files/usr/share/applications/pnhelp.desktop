@@ -2,7 +2,7 @@
 Name=PNHelp
 GenericName=Pinenote Help
 Comment=Open up the Pinenote help page
-Exec=firefox-esr /etc/greeter/greet.html
+Exec=firefox-esr /etc/greeter/html/index.html
 Icon=/etc/greeter/icon_48-48.png
 Type=Application
 StartupNotify=false

@@ -1,5 +1,11 @@
-pn-handbook (1.0) UNRELEASED; urgency=medium
+pn-handbook (1.1) unstable; urgency=medium
+
+  * Use mkdocs to generate html handbook from .md files instead of pandas
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Mon, 31 Jul 2023 22:00:08 +0200
+
+pn-handbook (1.0) unstable; urgency=medium
 
   * Initial release.
 
- -- Maximilian Weigand <mweigand@koko>  Tue, 06 Jun 2023 13:25:01 +0200
+ -- Maximilian Weigand <mweigand@mweigand.net>  Mon, 31 Jul 2023 21:46:01 +0200

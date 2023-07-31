@@ -3,7 +3,7 @@
 test -e $HOME/.config/pinenote/disable_greeter && exit
 
 
-firefox-esr /etc/greeter/greet.html&
+firefox-esr /etc/greeter/html/index.html&
 
 test -d $HOME/.config/pinenote || mkdir $HOME/.config/pinenote
 

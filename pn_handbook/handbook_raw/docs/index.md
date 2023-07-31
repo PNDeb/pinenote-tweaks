@@ -1,4 +1,4 @@
-# PineNote Debian Bookworm
+# Debian Bookworm for the Pine64 PineNote
 
 ## Introduction
 
@@ -13,7 +13,8 @@ If you have not done this yet, we strongly recommend to at least skim this
 document before proceeding to use your PineNote.
 
 If you want to improve this text, merge requests are very very much appreciated!
-(https://github.com/m-weigand/pinenote-debian-recipes/blob/dev/overlays/greeter/pn_handbook.md")[Improve here]
+
+[Improve on github](https://github.com/PNDeb/pinenote-tweaks/tree/main/pn_handbook)
 
 ## Getting started
 
@@ -37,9 +38,12 @@ If you want to improve this text, merge requests are very very much appreciated!
 
 ## Updates
 
-Apart from a number of tweaks aimed at producing an improved user experience on the PineNote, and a few patched packages, you are running a Debian Bookworm operating system which can be maintained as very other system. Use apt or aptititude to manage you packages.
+Apart from a number of tweaks aimed at producing an improved user experience on
+the PineNote, and a few patched packages, you are running a Debian Bookworm
+operating system which can be maintained as very other system. Use apt or
+aptitude to manage you packages.
 
-The modified packages that were installed were also pinned, meaning they will not be overwritten by updates. At some point other packages will also not be automatically updated because they depend on newer versions of the pinned packages, which will need manual intervention at some point. Currently there is no easy way to update the modified packages and solutions are discussed in this issue: https://github.com/m-weigand/pinenote-debian-recipes/issues/38
+A PineNote package repository is in its early testing phase, and should be configured by default in this installation. For manual configuration of the repository, please refer to [this part of the image Readme.](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specific-debian-repository)
 
 ## Using another partition for /home
 
@@ -65,10 +69,33 @@ Example to switch /home to /dev/mmcblk0p19:
 
 ## Documentation for apps/systems
 
+### BLE Pen (Buttons)
+
+The PineNote Pen interfaces with the PineNote using two interfaces: The stylus
+input is one using the touchscreen (cyttsp5 driver), while the three buttons
+are controlled via a separate Bluetooth-Low-Energy-based connection.
+
+A driver for the button part was developed by smaeul
+(https://github.com/smaeul/linux/commits/rk356x-ebc-dev).
+
+The hardware contains non-volatile storage for the MAC address - it could be
+that the pen just works. Otherwise, as root, connect manually:
+
+	echo 1 > /sys/bus/spi/devices/spi4.0/scan; # scanning takes ca. 12 seconds
+											 # press the buttons during scanning
+    # print MAC address pen
+	cat /sys/bus/spi/devices/spi4.0/scan
+	echo [MAC] > /sys/bus/spi/devices/spi4.0/pen_address
+
+Afterwards, check that the pen is working by checking the pen attributes:
+
+	cat /sys/bus/spi/devices/spi4.0/scan/pen_version
+	cat /sys/bus/spi/devices/spi4.0/scan/pen_battery
+
 ### EBC Kernel Driver
 
-The EBC subsystem controls the eink (or epd) display and is one of components which require
-most tweaking for each user.
+The EBC subsystem controls the eink (or epd) display and is one of components
+which require most tweaking for each user.
 
 	* ioctls
 
@@ -226,7 +253,11 @@ reboot the pinenote once):
   activate it in the settings in order to scroll using touch gestures.
 * If the pen buttons are configured, holding down the button nearest to the tip
   should allow you to scroll using the pen.
-* After both pen and touch scrolling a global refresh is triggered
+* (depending on XPP version) After both pen and touch scrolling a global
+  refresh is triggered
+* Kinetic scrolling needs to be disabled because GTK3's implementation
+  interferes with some aspect of touch input handling, including touch cancel
+  events
 
 ## What is not working?
 
