@@ -1,7 +1,7 @@
 Source: pn-default-documents
 Section: unknown
 Priority: optional
-Maintainer: Maximilian Weigand <mweigand@koko>
+Maintainer: Maximilian Weigand <mweigand@mweigand.net>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -14,5 +14,5 @@ Package: pn-default-documents
 Architecture: all
 Depends:
  ${misc:Depends},
-Description: <insert up to 60 chars description>
+Description: A few default documents for the PineNote - just for testing
  <Insert long description, indented with spaces.>

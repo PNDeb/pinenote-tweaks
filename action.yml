@@ -1,0 +1,6 @@
+# action.yml
+name: 'PineNote tweaks package'
+description: 'Compile and package PN Tweaks'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

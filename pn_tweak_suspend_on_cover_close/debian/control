@@ -1,7 +1,7 @@
 Source: pn-suspend-on-cover
 Section: unknown
 Priority: optional
-Maintainer: Maximilian Weigand <mweigand@koko>
+Maintainer: Maximilian Weigand <mweigand@mweigand.net>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -14,5 +14,5 @@ Package: pn-suspend-on-cover
 Architecture: all
 Depends:
  ${misc:Depends},
-Description: <insert up to 60 chars description>
+Description: Suspend the PineNote when the cover is closed.
  <Insert long description, indented with spaces.>

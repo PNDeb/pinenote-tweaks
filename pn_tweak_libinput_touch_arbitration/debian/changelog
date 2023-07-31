@@ -1,5 +1,5 @@
-pn-tweak-libinput-touch-arbitration (1.0) UNRELEASED; urgency=medium
+pn-tweak-libinput-touch-arbitration (1.0) unstable; urgency=medium
 
   * Initial release.
 
- -- Maximilian Weigand <mweigand@koko>  Fri, 02 Jun 2023 10:34:21 +0200
+ -- Maximilian Weigand <mweigand@mweigand.net>  Tue, 01 Aug 2023 12:57:56 +0200

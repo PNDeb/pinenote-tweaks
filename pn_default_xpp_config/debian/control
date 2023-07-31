@@ -1,7 +1,7 @@
 Source: pn-defaut-xpp-config
 Section: unknown
 Priority: optional
-Maintainer: Maximilian Weigand <mweigand@koko>
+Maintainer: Maximilian Weigand <mweigand@mweigand.net>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -14,5 +14,5 @@ Package: pn-defaut-xpp-config
 Architecture: all
 Depends:
  ${misc:Depends},
-Description: <insert up to 60 chars description>
+Description: Xournalpp configuration for the PineNote
  <Insert long description, indented with spaces.>

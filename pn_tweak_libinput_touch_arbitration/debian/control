@@ -1,7 +1,7 @@
 Source: pn-tweak-libinput-touch-arbitration
 Section: unknown
 Priority: optional
-Maintainer: Maximilian Weigand <mweigand@koko>
+Maintainer: Maximilian Weigand <mweigand@mweigand.net>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -15,5 +15,5 @@ Architecture: all
 Depends:
  ${misc:Depends},
  libinput-bin (>= 1.23.0-1)
-Description: <insert up to 60 chars description>
+Description: libinput quirks/udev rule for PineNote touch arbitration
  <Insert long description, indented with spaces.>

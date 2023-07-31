@@ -17,5 +17,5 @@ Architecture: all
 Depends:
  ${misc:Depends},
  firefox-esr
-Description: <insert up to 60 chars description>
+Description: PineNote-specific help text
  <Insert long description, indented with spaces.>
