@@ -16,6 +16,16 @@ If you want to improve this text, merge requests are very very much appreciated!
 
 [Improve on github](https://github.com/PNDeb/pinenote-tweaks/tree/main/pn_handbook)
 
+## Where to get help
+
+Remember that software for the PineNote is created by the community, for the
+community!
+
+Probably the best and fastest way to get help is to join the PineNote chat via
+Matrix, irc, or Discord. Please refer to the wiki page for more information on
+chats and forums: [Pine64
+Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
+
 ## Getting started
 
 * User/Password: You are logged in as user "user" with password "1234". sudo is
@@ -27,7 +37,7 @@ If you want to improve this text, merge requests are very very much appreciated!
 * The **Documents/** directory contains one sample .pdf and one .epub file. Try
   opening them and start reading!
 
-* You may want to reconfigure your locales:
+* You may want (should!) to reconfigure your locales:
 
 	sudo dpkg-reconfigure locales
 
@@ -43,11 +53,17 @@ the PineNote, and a few patched packages, you are running a Debian Bookworm
 operating system which can be maintained as very other system. Use apt or
 aptitude to manage you packages.
 
-A PineNote package repository is in its early testing phase, and should be configured by default in this installation. For manual configuration of the repository, please refer to [this part of the image Readme.](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specific-debian-repository)
+A PineNote package repository is in its early testing phase, and should be
+configured by default in this installation. For manual configuration of the
+repository, please refer to [this part of the image
+Readme.](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specific-debian-repository)
 
 ## Using another partition for /home
 
-By default /home is located on the root partition. However, a bash script is
+Depending on the method of installation, /home is located on the root
+partition, which is quite small in size (check by analysing the output of the
+*mount* command).
+However, a bash script is
 provided in `/root/switch_home_to_other_partition.sh` which can be used to
 change the partition that is used for /home. The script can also transfer data
 from the current /home to the new partition. Call as root.
