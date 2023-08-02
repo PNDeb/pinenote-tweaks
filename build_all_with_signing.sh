@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Pinenote Signing KEy 2
-DEB_SIGN_KEYID="DD1D0D77F26513424CEE6987276D8785BD77E98A"
+export DEB_SIGN_KEYID="DD1D0D77F26513424CEE6987276D8785BD77E98A"
 
 cd pn_default_gnome_config
 dpkg-buildpackage
