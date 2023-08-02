@@ -1,3 +1,9 @@
+pn-defaut-xpp-config (1.0+nmu2) unstable; urgency=medium
+
+  * Actually use the PineNote toolbar
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Wed, 02 Aug 2023 13:25:09 +0200
+
 pn-defaut-xpp-config (1.0+nmu1) unstable; urgency=medium
 
   * Initial release.
