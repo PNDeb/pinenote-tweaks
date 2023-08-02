@@ -5,7 +5,7 @@
   <property name="minimumPressure" value="0.05"/>
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
-  <property name="selectedToolbar" value="Minimal Top"/>
+  <property name="selectedToolbar" value="PineNoteTB"/>
   <property name="lastSavePath" value=""/>
   <property name="lastOpenPath" value=""/>
   <property name="lastImagePath" value=""/>
