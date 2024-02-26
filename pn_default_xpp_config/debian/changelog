@@ -1,3 +1,9 @@
+pn-defaut-xpp-config (1.1) unstable; urgency=medium
+
+  * Enter/leave A2 waveform when detecting the pen
+
+ -- Maximilian Weigand (PineNote Signing Key 3) <mweigand@mweigand.net>  Mon, 26 Feb 2024 20:59:33 +0100
+
 pn-defaut-xpp-config (1.0+nmu2) unstable; urgency=medium
 
   * Actually use the PineNote toolbar
