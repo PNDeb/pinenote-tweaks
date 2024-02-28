@@ -1,6 +1,7 @@
-pn-defaut-xpp-config (1.1) unstable; urgency=medium
+pn-defaut-xpp-config (1.2) unstable; urgency=medium
 
   * Enter/leave A2 waveform when detecting the pen
+  * Skip v1.1 due to bad packaging practices
 
  -- Maximilian Weigand (PineNote Signing Key 3) <mweigand@mweigand.net>  Mon, 26 Feb 2024 20:59:33 +0100
 
