@@ -140,6 +140,7 @@ via udev rules.
 Overview of sysfs-parameters:
 
 * TODO
+* **split_area_limit** split_area_limit denotes the number of splits that the driver is allowed to apply to individual clips. The idea is: when you submit two damage regions for drawing, and both regions overlap, and the first one already started, then it sometimes makes sense to split the second area into four smaller regions, from which three can already start drawing. This is really useful for writing applications where there is usually a little bit of overlap between subsequent drawing areas
 
 In addition, two custom ioctls are currently implemented for the ebc driver:
 
