@@ -1,4 +1,10 @@
-# Debian Bookworm for the Pine64 PineNote
+# Debian Trixie for the Pine64 PineNote
+
+TOC:
+
+* Getting started
+* Troubleshooting
+* How do I...
 
 ## Introduction
 
@@ -7,7 +13,7 @@ Hi there, nice of you to install this Debian image on your PineNote!
 Before you begin, please bear in mind that the PineNote, and this image, is
 aimed a experienced users and developers, and many things need manual tweaking
 or do not just work yet.
-However, many things also use, and you can take control of quite a lot of
+However, many things also work, and you can take control of quite a lot of
 things.
 If you have not done this yet, we strongly recommend to at least skim this
 document before proceeding to use your PineNote.
@@ -18,7 +24,7 @@ If you want to improve this text, merge requests are very very much appreciated!
 
 ## Where to get help
 
-Remember that software for the PineNote is created by the community, for the
+Remember, software for the PineNote is created by the community, for the
 community!
 
 Probably the best and fastest way to get help is to join the PineNote chat via
@@ -75,15 +81,36 @@ Example to switch /home to /dev/mmcblk0p19:
 
 ## How do I
 
-* **Read a book (epub)/pdf**: Koreader is already installed and should be
-  registered for corresponding file types
+* **Read a book (epub)/pdf**:
+	* Koreader is already installed and should be registered for corresponding
+	  file types
+	* ?
 * **Take notes**: Xournalpp was slightly modified to provide an improved
   experience on the Pinenote.
-* **Use the Pinenote as an external screen?**: TODO, link to weylus project
+  Other note-taking apps to test/consider:
+	* https://github.com/saber-notes/
+	* rnote
+	* syioek (???)
+* **Use the Pinenote as an external screen?**:
+	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
 * **Use an external monitor with the Pinenote?**: TODO (won't directly work,
   need something like vnc and virtual monitor)
+	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
 
 ## Documentation for apps/systems
+
+### Wakeup-Sources
+
+* Cover
+* Bluetooth
+* Power cable
+* Button
+* Touch screen
+
+### Sleep sources
+
+* PWR-Button-press
+* Pen-Button-Press
 
 ### BLE Pen (Buttons)
 
@@ -105,8 +132,8 @@ that the pen just works. Otherwise, as root, connect manually:
 
 Afterwards, check that the pen is working by checking the pen attributes:
 
-	cat /sys/bus/spi/devices/spi4.0/scan/pen_version
-	cat /sys/bus/spi/devices/spi4.0/scan/pen_battery
+	cat /sys/bus/spi/devices/spi4.0/pen_version
+	cat /sys/bus/spi/devices/spi4.0/pen_battery
 
 ### EBC Kernel Driver
 
@@ -277,6 +304,7 @@ reboot the pinenote once):
 
 ## What is not working?
 
+In general, for an up-to-date list of open issues, refer to PNDEB-issue tracker. TODO
 * Open Issues
 
 	* Gnome extension: There are issues when suspend/screen blanking (i.e.,
