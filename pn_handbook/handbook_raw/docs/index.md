@@ -114,12 +114,14 @@ Example to switch /home to /dev/mmcblk0p19:
 
 ### BLE Pen (Buttons)
 
-The PineNote Pen interfaces with the PineNote using two interfaces: The stylus
-input is one using the touchscreen (cyttsp5 driver), while the three buttons
-are controlled via a separate Bluetooth-Low-Energy-based connection.
+The PineNote Pen interfaces with the PineNote using two interfaces:
 
-A driver for the button part was developed by smaeul
-(https://github.com/smaeul/linux/commits/rk356x-ebc-dev).
+* The stylus input is one using the touchscreen (cyttsp5 driver),
+* on the other hand, the three buttons are controlled via a separate
+  Bluetooth-Low-Energy-based connection.
+
+  A driver for the BLE-button interface was developed by smaeul
+	(https://github.com/smaeul/linux/commits/rk356x-ebc-dev).
 
 The hardware contains non-volatile storage for the MAC address - it could be
 that the pen just works. Otherwise, as root, connect manually:
@@ -161,13 +163,38 @@ the modprobe configuration file:
 	root@pinenote:~# cat /etc/modprobe.d/rockchip_ebc.conf
 	options rockchip_ebc direct_mode=0 auto_refresh=1 split_area_limit=0 panel_reflection=1
 
-By default the parameters in /sys/module/rockchip_ebc/parameters need to be writen to as root, but this can be easily changed
-via udev rules.
+By default the parameters in /sys/module/rockchip_ebc/parameters need to be
+writen to as root, but this can be easily changed via udev rules.
+
+### Debugging
+
+Newer versions of the kernel driver use the (dynamic debug
+feature)[https://www.kernel.org/doc/html/latest/admin-guide/dynamic-debug-howto.html]
+of the linux kernel.
+
+As root, the following commands should get you going. Note that the line
+numbers can change between kernel releases! Check the output of `cat control |
+grep rockchip_ebc`
+
+	cd /sys/kernel/debug/dynamic_debug/
+	# lists all debug outputs available for the module
+	cat control  | grep rockchip_ebc
+	# now we can activate/disable individual debug statements
+	echo -n 'file drivers/gpu/drm/rockchip/rockchip_ebc.c line 1289 +p' > control
+	# list currently active (=p) debug statements
+	cat control  | grep rockchip_ebc | grep " =p "
+
 
 ### Overview of module/sysfs-parameters:
 
 * TODO
-* **split_area_limit** split_area_limit denotes the number of splits that the driver is allowed to apply to individual clips. The idea is: when you submit two damage regions for drawing, and both regions overlap, and the first one already started, then it sometimes makes sense to split the second area into four smaller regions, from which three can already start drawing. This is really useful for writing applications where there is usually a little bit of overlap between subsequent drawing areas
+* **split_area_limit** split_area_limit denotes the number of splits that the
+  driver is allowed to apply to individual clips. The idea is: when you submit
+  two damage regions for drawing, and both regions overlap, and the first one
+  already started, then it sometimes makes sense to split the second area into
+  four smaller regions, from which three can already start drawing. This is
+  really useful for writing applications where there is usually a little bit of
+  overlap between subsequent drawing areas
 
 In addition, two custom ioctls are currently implemented for the ebc driver:
 
@@ -305,7 +332,9 @@ reboot the pinenote once):
 
 ## What is not working?
 
-In general, for an up-to-date list of open issues, refer to PNDEB-issue tracker. TODO
+In general, for an up-to-date list of open issues, refer to PNDEB-issue
+tracker. TODO
+
 * Open Issues
 
 	* Gnome extension: There are issues when suspend/screen blanking (i.e.,
