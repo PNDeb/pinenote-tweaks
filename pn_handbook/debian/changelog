@@ -1,3 +1,10 @@
+pn-handbook (1.3) unstable; urgency=medium
+
+  [ Maximilian Weigand  ]
+  * A few fixes, we now target Debian trixie
+
+ -- Maximilian Weigand (PineNote Signing Key 3) <mweigand@mweigand.net>  Sun, 14 Jul 2024 09:50:11 +0200
+
 pn-handbook (1.2) unstable; urgency=medium
 
   * Text updates
