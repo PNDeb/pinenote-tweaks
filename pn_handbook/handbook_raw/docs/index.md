@@ -55,7 +55,7 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
 ## Updates
 
 Apart from a number of tweaks aimed at producing an improved user experience on
-the PineNote, and a few patched packages, you are running a Debian Bookworm
+the PineNote, and a few patched packages, you are running a Debian Trixie
 operating system which can be maintained as very other system. Use apt or
 aptitude to manage you packages.
 
@@ -84,13 +84,13 @@ Example to switch /home to /dev/mmcblk0p19:
 * **Read a book (epub)/pdf**:
 	* Koreader is already installed and should be registered for corresponding
 	  file types
-	* ?
 * **Take notes**: Xournalpp was slightly modified to provide an improved
   experience on the Pinenote.
   Other note-taking apps to test/consider:
 	* https://github.com/saber-notes/
 	* rnote
 	* syioek (???)
+* Surf the internet using Firefox
 * **Use the Pinenote as an external screen?**:
 	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
 * **Use an external monitor with the Pinenote?**: TODO (won't directly work,
