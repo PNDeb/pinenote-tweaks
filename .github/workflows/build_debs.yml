@@ -31,7 +31,7 @@ jobs:
       - name: Docker-based compilation
         id: compile-mesa-in-docker
         uses: PNDeb/pinenote-tweaks@main
-      - name: Checkout rkbin
+      - name: ls -l
         run: |
           ls -l ${{ runner.temp }}/_github_home
       - name: Upload files
@@ -39,6 +39,10 @@ jobs:
         with:
           name: pinenote-tweaks-debs
           path: ${{ runner.temp }}/_github_home/release
+      - name: Upload pages files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/_github_home/handbook
 
   # do_release:
   #   runs-on: ubuntu-latest
@@ -57,6 +61,27 @@ jobs:
   #         draft: true
   #         files: |
   #           artifacts/PineNote-Tweaks/*
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build_debs
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
 
   do_release:
     # if: startsWith(github.ref, 'refs/tags/')

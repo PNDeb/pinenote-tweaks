@@ -8,7 +8,7 @@ RUN apt update
 RUN apt -y upgrade
 RUN apt -y install vim-nox git build-essential devscripts debhelper-compat
 
-RUN apt -y install mkdocs mkdocs-material
+RUN apt -y install mkdocs mkdocs-material rsync
 # RUN cargo install cargo-deb
 
 # RUN apt -y build-dep xournalpp
