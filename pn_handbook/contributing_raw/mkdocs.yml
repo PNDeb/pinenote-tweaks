@@ -1,0 +1,9 @@
+site_name: Contributing to the PineNote Ecosystem
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: "#"
