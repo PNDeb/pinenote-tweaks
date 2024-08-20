@@ -1,5 +1,14 @@
 #!/bin/bash
+outdir="${PWD}/files/etc/greeter/html"
 
-cd handbook_raw
+test -d "${outdir}" && rm -r "${outdir}"
+mkdir -p "${outdir}"
+
+cd userguide_raw
 mkdocs build
-rsync -avz site/ ../files/etc/greeter/html/
+mkdir -p "${outdir}"/user_guide/
+rsync -avz site/ "${outdir}"/user_guide/
+cd ..
+
+# copy the landing page
+cp landing_page.html "${outdir}"/index.html
