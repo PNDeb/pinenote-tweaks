@@ -14,9 +14,10 @@ This menu allows rapidly changing mode to suit what you are doing on the device.
 
 The screen features a Wacom digitiser for the pen input, and this is supported out of the box.
 
-### Getting online
+### WiFi & Bluetooth
 <!-- TODO -->
 The PineNote can be connected to WiFi by using the menu in the top right hand corner, and then tapping on the WiFi symbol.
+Bluetooth also works as expected and shows up in this menu. This will allow you to pair keyboards and other peripherals to the device.
 
 ### Updates
 <!-- TODO -->
