@@ -31,9 +31,6 @@ jobs:
       - name: Docker-based compilation
         id: compile-mesa-in-docker
         uses: PNDeb/pinenote-tweaks@main
-      - name: ls -l
-        run: |
-          ls -l ${{ runner.temp }}/_github_home
       - name: Upload files
         uses: actions/upload-artifact@v3
         with:
