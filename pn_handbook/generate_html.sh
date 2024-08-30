@@ -23,4 +23,5 @@ rsync -avz site/ "${outdir}"/contributing/
 cd ..
 
 # copy the landing page
+cp pine64.png "${outdir}"/
 cp landing_page.html "${outdir}"/index.html

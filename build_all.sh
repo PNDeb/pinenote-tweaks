@@ -22,6 +22,7 @@ dpkg-buildpackage -us -uc
 cd ..
 
 cd pn_handbook
+./generate_html.sh
 dpkg-buildpackage -us -uc
 cd ..
 

@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Links Page</title>
+    <title>Pine64 PineNote Help</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             display: flex;
+            background-color: #000000 ;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
             font-family: Arial, sans-serif;
+	    background-image: url("pine.png");
         }
         .link-container {
             display: flex;
@@ -25,11 +27,14 @@
             max-width: 1872px;
         }
         .link {
+	    opacity: 0.8;
+	    border-radius: 25px;
             display: block;
             width: 100%;
             height: 300px;
             text-align: center;
-            background-color: #f0f0f0;
+            /* background-color: #f0f0f0 */;
+            background-color: #fff0f0 ;
             margin-bottom: 10px;
             text-decoration: none;
             color: #333;
@@ -37,14 +42,18 @@
             font-size: 18px;
             line-height: 300px;
         }
-        @media (min-width: 1500px) {
+        @media (min-width: 800px) {
             .link-container {
                 flex-direction: row;
             }
             .link {
-                flex-grow: 1;
+		/*display: flex;*/
+                /*flex-grow: 1; */
                 margin-right: 10px;
+		/* width: 100px; */
             }
+	    /*
+	    */
             .link:last-child {
                 margin-right: 0;
             }
@@ -56,6 +65,8 @@
         <a href="getting_started/index.html" class="link">Getting Started & Troubleshooting</a>
         <a href="user_guide/index.html" class="link">User Guide</a>
         <a href="contributing/index.html" class="link">Contributing to the Pinenote</a>
+	<!--
+	-->
     </div>
 </body>
 </html>
