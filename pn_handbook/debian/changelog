@@ -1,3 +1,9 @@
+pn-handbook (1.5) trixie; urgency=medium
+
+  * Tiny fixes
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Sun, 08 Sep 2024 10:33:22 +0200
+
 pn-handbook (1.4) trixie; urgency=medium
 
   * First release using the new landing page
