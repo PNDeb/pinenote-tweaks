@@ -1,3 +1,9 @@
+pn-default-gnome-config (1.2) unstable; urgency=medium
+
+  * Maintenance release
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Sun, 08 Sep 2024 10:40:04 +0200
+
 pn-default-gnome-config (1.1) unstable; urgency=medium
 
   * use 40 Hz refresh rate by default
