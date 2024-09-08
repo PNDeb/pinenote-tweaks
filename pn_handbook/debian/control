@@ -16,6 +16,6 @@ Package: pn-handbook
 Architecture: all
 Depends:
  ${misc:Depends},
- firefox-esr
-Description: PineNote-specific help text
+ yelp
+Description: PineNote-specific help manual
  <Insert long description, indented with spaces.>
