@@ -1,3 +1,9 @@
+pn-handbook (1.6) trixie; urgency=medium
+
+  * Just another release
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Sun, 22 Sep 2024 20:45:54 +0200
+
 pn-handbook (1.5) trixie; urgency=medium
 
   * Tiny fixes

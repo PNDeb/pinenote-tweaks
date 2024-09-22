@@ -74,10 +74,14 @@ provided in `/root/switch_home_to_other_partition.sh` which can be used to
 change the partition that is used for /home. The script can also transfer data
 from the current /home to the new partition. Call as root.
 
-Example to switch /home to /dev/mmcblk0p19:
+Example to switch /home to /dev/mmcblk0p7:
 
 	cd /root
-	switch_home_to_other_partition.sh /dev/mmcblk0p19
+	switch_home_to_other_partition.sh /dev/mmcblk0p7
+
+## Switching the default boot partitions
+
+TODO
 
 ## How do I
 
