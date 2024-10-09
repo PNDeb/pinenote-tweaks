@@ -56,7 +56,40 @@ repository is purely community maintained. While waiting for PN-specific
 patches, we would not want stock packages to break the PN experience!
 
 ### ePaper Modes
-<!-- TODO, need to check the names on the device -->
+
+ePaper displays work differently than traditional lcds.
+Summarizing, these displays change their content by applying different voltage
+waveforms to individual pixels, resulting in different shades of gray.
+Problematic is that these waveforms differ depending on current temperature and
+current state (color) of a given pixel.
+In general, updating these displays is slow (complete screen updates can take
+seconds!).
+
+However, different waveforms have been developed by the panel producers to
+improve response times.
+However, speed is bought at the expensive of quality, and fast waveforms
+exhibit artifacts (remnants of previous images), or can only operate on a
+limited color subspace (i.e., only for black and white pixels).
+
+In daily operation of the PineNote, you will most probably only encounter three
+waveforms:
+
+* GC16: This is the default, high-quality waveform that enables 16 grayscale
+  colors. It's also the slowest refresh type.
+* DU4: This is a somewhat faster waveform, good for reading. It supports only 4
+  colors.
+* A2: This is a very fast black & white waveform, useful for fast changes of
+  screen content  (i.e., drawing, writing).
+
+One additional feature of the hardware is partial refresh capability: The
+display can only be updated in a certain, rectangular region. This can greatly
+improve response times, but requires adapted software.
+
+The default Gnome environment comes with a simple extension installed that lets
+you change the current panel waveform (as well as enable dithering for the
+black and white mode).
+
+[TODO: image here]
 
 ### Touch Gestures in Debian
 
