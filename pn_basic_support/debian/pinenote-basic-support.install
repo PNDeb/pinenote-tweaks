@@ -1,0 +1,2 @@
+u-boot-default/* /usr/share/u-boot-menu/conf.d/
+modprobe.d/* /etc/modprobe.d/
