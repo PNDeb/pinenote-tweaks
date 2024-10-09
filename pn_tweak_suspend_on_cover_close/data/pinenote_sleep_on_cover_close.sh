@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 echo "PineNote: Waiting for cover-close events..."
 event_close='*type 5 (EV_SW), code 16 (?), value 1'
 
