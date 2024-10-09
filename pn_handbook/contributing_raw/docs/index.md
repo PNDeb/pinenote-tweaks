@@ -9,7 +9,7 @@ degrees.
 In the following some long-standing themes are discussed. However, if you are
 willing to actively help, please drop into the PineNote chat on
 matrix/irc/telegram (see
-https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms).
+[wiki.pine64.org](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms) ).
 
 ## Documentation
 
@@ -19,10 +19,10 @@ that you found difficult to follow, or topics that you think are important, but
 are completely missing from the documentation.
 
 Traditionally, technical, as well as user-focussed, information can be found in
-the Pine wiki (https://wiki.pine64.org/wiki/Main_Page).
+the [Pine wiki](https://wiki.pine64.org/wiki/Main_Page).
 However, the PineNote comes with a separate user manual (this document you are
-reading right now), which resides in this github repository:
-https://github.com/PNDeb/pinenote-tweaks/tree/main/pn_handbook
+reading right now), which resides in this github
+[repository](https://github.com/PNDeb/pinenote-tweaks/tree/main/pn_handbook).
 
 Issues and pull-requests are very welcome!
 
