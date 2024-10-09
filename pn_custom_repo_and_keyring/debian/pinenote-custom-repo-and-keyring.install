@@ -1,0 +1,3 @@
+keyrings/* /usr/share/keyrings/
+apt_preferences/* /etc/apt/preferences.d/
+apt_sources/* /etc/apt/sources.list.d/
