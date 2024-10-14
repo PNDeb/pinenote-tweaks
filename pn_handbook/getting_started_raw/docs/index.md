@@ -116,3 +116,11 @@ people.
 * MichiMolle created a beautiful GNOME and GTK theme for the Pinenote
   (https://github.com/MichiMolle/PNEink)
 * Cover designs by Funeral (https://wiki.pine64.org/wiki/PineNote_Press)
+* Dragan Simic contributions include help with designing the PineNote's UART
+  debug hardware
+* User hrdl contributed on the drawing/input side:
+	* optimised xournal++ for drawing performance
+	* some fixes related to stylus input and touch in libinput / gtk / sway
+	* 10 finger support and configurability for anyone who dares to replace
+	  their touch screen controller's firmware (non-mainlined)
+	  (https://gitlab.com/hrdl/pinenote-cyttsp5)
