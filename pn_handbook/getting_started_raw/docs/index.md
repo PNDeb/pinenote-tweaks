@@ -22,7 +22,7 @@ The screen features a Wacom digitiser for the pen input, and this is supported
 out of the box.
 
 ### WiFi & Bluetooth
-<!-- TODO -->
+
 The PineNote can be connected to WiFi by using the menu in the top right hand
 corner, and then tapping on the WiFi symbol.
 Bluetooth also works as expected and shows up in this menu. This will allow you
@@ -102,11 +102,17 @@ https://help.gnome.org/users/gnome-help/stable/touchscreen-gestures.html.en
 
 ### Thank you
 
-<!--
-pgwipeout?
--->
+This Debian image is the result of multiple years of work from quite a lot of
+people.
 
-Finally, this software distribution is bought to you by Maximilian who has
-tirelessly worked away and making this experience as polished as possible.
-There have also been huge contributions by Samuel Holland and others who have
-created the upstream ePaper driver that is used for this screen.
+* A **lot** of driver development work was done by Samuel Holland (smaeul) and
+  pgwipeout, as well as CrystalGamma
+* Special note should be taken of the reverse engineering and development work
+  of the EBC driver: Samuel Holland (smaeul), Ralimtek
+* Eugen Răhăian created the first, initial version of the Debian image using
+  *debos* (https://salsa.debian.org/eugenrh/pinenote-debian-recipes).
+  This version was then extended to include the GNOME interface by
+  Maximilian Weigand (https://github.com/PNDeb/pinenote-debian-image).
+* MichiMolle created a beautiful GNOME and GTK theme for the Pinenote
+  (https://github.com/MichiMolle/PNEink)
+* Cover designs by Funeral (https://wiki.pine64.org/wiki/PineNote_Press)
