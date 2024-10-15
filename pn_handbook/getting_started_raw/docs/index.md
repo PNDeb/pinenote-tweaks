@@ -102,8 +102,8 @@ https://help.gnome.org/users/gnome-help/stable/touchscreen-gestures.html.en
 
 ### Thank you
 
-This Debian image is the result of multiple years of work from quite a lot of
-people.
+The PineNote, among with its current software ecosystem, is the result of
+multiple years of work from quite a lot of people. Notable mentions:
 
 * A **lot** of driver development work was done by Samuel Holland (smaeul) and
   pgwipeout, as well as CrystalGamma
@@ -124,3 +124,7 @@ people.
 	* 10 finger support and configurability for anyone who dares to replace
 	  their touch screen controller's firmware (non-mainlined)
 	  (https://gitlab.com/hrdl/pinenote-cyttsp5)
+* Petr Hodina (@phodina) contributed, among other things, to the Postmarket OS
+  port (https://wiki.postmarketos.org/wiki/PINE64_PineNote_(pine64-pinenote)),
+  as well as mutter and mesa patches
+* hmpthcs brought us the WinkShell (https://github.com/hmpthcs/WinkShell)
