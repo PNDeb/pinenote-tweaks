@@ -1,11 +1,5 @@
 # Debian Trixie for the Pine64 PineNote
 
-TOC:
-
-* Getting started
-* Troubleshooting
-* How do I...
-
 ## Introduction
 
 Hi there, nice of you to install this Debian image on your PineNote!
@@ -52,12 +46,32 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
   Both of these items will become important for an effective use of the
   PineNote in a Gnome environment.
 
+* (advanced users) Your PineNote comes partitioned with two operating system partitions (**os1** and **os2**, each ca. 15 GB in size).
+  The default install resides on **os1**, leaving **os2** for experiments, such as other distributions images, etc. If you plan on modifying this installation heavily, a second install to **os2** could help in recovering from serious errors. More information on installing a Debian image to **os2** can be found [here](https://github.com/PNDeb/pinenote-debian-image/blob/trixie/partition_tables/Readme.md).
+
+## How do I...
+
+* **Read a book (epub)/pdf**:
+	* Koreader is already installed and should be registered for corresponding
+	  file types
+* **Take notes**: Xournalpp is installed on the Pinenote by default.
+  Other note-taking apps to test/consider:
+	* https://github.com/saber-notes/
+	* rnote
+	* syioek (???)
+* Surf the internet using Firefox
+* **Use the Pinenote as an external screen?**:
+	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
+* **Use an external monitor with the Pinenote?**: The Pinenote is not wired to provide external display support via usb-c (this is called [alternate mode](https://en.wikipedia.org/wiki/USB-C#Alternate_modes). Therefore, if you want to use the PineNote as an external display, you will need to use other means.
+	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
+   	* (untested) Provided that you are running a newer GNOME installation on your computer, you could try to use gnome remote connections and virtual monitors (https://ubuntuhandbook.org/index.php/2023/07/share-extended-screen-gnome/)
+
 ## Updates
 
 Apart from a number of tweaks aimed at producing an improved user experience on
 the PineNote, and a few patched packages, you are running a Debian Trixie
-operating system which can be maintained as very other system. Use apt or
-aptitude to manage you packages.
+operating system which can be maintained as very other system. Use `apt` or
+`aptitude` to manage you packages. `gnome-software` is also installed and should prompt you within GNOME in regular intervals if software updates are available.
 
 A PineNote package repository is in its early testing phase, and should be
 configured by default in this installation. For manual configuration of the
@@ -82,24 +96,6 @@ Example to switch /home to /dev/mmcblk0p7:
 ## Switching the default boot partitions
 
 TODO
-
-## How do I
-
-* **Read a book (epub)/pdf**:
-	* Koreader is already installed and should be registered for corresponding
-	  file types
-* **Take notes**: Xournalpp was slightly modified to provide an improved
-  experience on the Pinenote.
-  Other note-taking apps to test/consider:
-	* https://github.com/saber-notes/
-	* rnote
-	* syioek (???)
-* Surf the internet using Firefox
-* **Use the Pinenote as an external screen?**:
-	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
-* **Use an external monitor with the Pinenote?**: TODO (won't directly work,
-  need something like vnc and virtual monitor)
-	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
 
 ## Documentation for apps/systems
 
