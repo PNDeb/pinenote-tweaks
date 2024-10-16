@@ -110,6 +110,7 @@ multiple years of work from quite a lot of people. Notable mentions:
 * Special note should be taken of the reverse engineering and development work
   of the EBC driver: Samuel Holland (smaeul), Ralimtek
 * Early installation guides from Dorian and Martyn imensly helped to get people running Linux!
+* doc/wiki contributions by funeral, aarondabomb
 * talkpadk provided us with a nice, curated, repo of the upstream u-boot (https://github.com/talpadk/u-boot-pinenote), upon which the currently-used u-boot version is built upon (https://github.com/talpadk/u-boot-pinenote).
 * Eugen Răhăian created the first, initial version of the Debian image using
   *debos* (https://salsa.debian.org/eugenrh/pinenote-debian-recipes).
