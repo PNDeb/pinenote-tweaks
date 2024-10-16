@@ -9,10 +9,17 @@ The PineNote comes loaded with a community maintained Debian based distribution
 that has been pre-configured for a reasonble starting point.
 Of course, you are welcome to customise your device to suit _you_.
 
+In general, if things are unclear, please take the following actions:
+
+* Read through this handbook (including the other sections)
+* Refer to the (PineNote wiki page)[https://wiki.pine64.org/index.php?title=PineNote]
+* Try the PineNote chat (see [this wiki page](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms) for more information on how to connect).
+
 ## Introduction
 
-The Pinenote Debian should be fairly self explanatory, but there is a new menu
-in the top bar of gnome that controls the ePaper display.
+The Pinenote Debian system is a lightly-modified [Debian trixie](https://www.debian.org/) installation, running GNOME as the graphical user interface.
+Usage should be fairly self explanatory, but there is a new menu
+in the top bar of gnome that controls the ePaper (eink) display.
 The display can render high quality greyscale, but due to the technology this
 makes screen updates slower, as the screen does more refreshes and flickering.
 This menu allows rapidly changing mode to suit what you are doing on the
@@ -98,7 +105,7 @@ page from Gnome for detailed information.
 However, the most important gesture is bringing up the On-Screen Keyboard (OSK)
 by swiping two fingers from the button screen border upwards.
 
-https://help.gnome.org/users/gnome-help/stable/touchscreen-gestures.html.en
+[Gnome Online Help](https://help.gnome.org/users/gnome-help/stable/touchscreen-gestures.html.en)
 
 ### Thank you
 
@@ -110,6 +117,7 @@ multiple years of work from quite a lot of people. Notable mentions:
 * Special note should be taken of the reverse engineering and development work
   of the EBC driver: Samuel Holland (smaeul), Ralimtek
 * Early installation guides from Dorian and Martyn imensly helped to get people running Linux!
+* early contributors include veapon, DorianRudolph, 0cc4m / occam_razor, UniversalSuperBox, counterpillow and caleb, iMartyn, danct12
 * doc/wiki contributions by funeral, aarondabomb
 * talkpadk provided us with a nice, curated, repo of the upstream u-boot (https://github.com/talpadk/u-boot-pinenote), upon which the currently-used u-boot version is built upon (https://github.com/talpadk/u-boot-pinenote).
 * Eugen Răhăian created the first, initial version of the Debian image using
