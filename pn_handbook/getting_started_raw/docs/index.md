@@ -116,7 +116,6 @@ multiple years of work from quite a lot of people. Notable mentions:
   This version was then extended to include the GNOME interface by
   Maximilian Weigand (https://github.com/PNDeb/pinenote-debian-image).
 * Eugen Răhăian also did a lot of (destructive) testing of the screen components with regard to UV exposure.
-* 
 * MichiMolle created a beautiful GNOME and GTK theme for the Pinenote
   (https://github.com/MichiMolle/PNEink)
 * Cover designs by Funeral (https://wiki.pine64.org/wiki/PineNote_Press)
