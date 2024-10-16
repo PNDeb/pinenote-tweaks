@@ -109,11 +109,14 @@ multiple years of work from quite a lot of people. Notable mentions:
   pgwipeout, as well as CrystalGamma
 * Special note should be taken of the reverse engineering and development work
   of the EBC driver: Samuel Holland (smaeul), Ralimtek
+* Early installation guides from Dorian and Martyn imensly helped to get people running Linux!
 * talkpadk provided us with a nice, curated, repo of the upstream u-boot (https://github.com/talpadk/u-boot-pinenote), upon which the currently-used u-boot version is built upon (https://github.com/talpadk/u-boot-pinenote).
 * Eugen Răhăian created the first, initial version of the Debian image using
   *debos* (https://salsa.debian.org/eugenrh/pinenote-debian-recipes).
   This version was then extended to include the GNOME interface by
   Maximilian Weigand (https://github.com/PNDeb/pinenote-debian-image).
+* Eugen Răhăian also did a lot of (destructive) testing of the screen components with regard to UV exposure.
+* 
 * MichiMolle created a beautiful GNOME and GTK theme for the Pinenote
   (https://github.com/MichiMolle/PNEink)
 * Cover designs by Funeral (https://wiki.pine64.org/wiki/PineNote_Press)
