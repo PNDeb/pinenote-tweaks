@@ -31,15 +31,19 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
 * User/Password: You are logged in as user "user" with password "1234". sudo is
   activated. We suggest to set a root password:
 
-	sudo su - root
-  	passwd
+    ```
+    sudo su - root
+    passwd
+    ```
 
 * The **Documents/** directory contains one sample .pdf and one .epub file. Try
   opening them and start reading!
 
 * You may want (should!) to reconfigure your locales:
 
+	```
 	sudo dpkg-reconfigure locales
+ 	```
 
 * The status bar at the top contains the refresh button and the PineNote-Helper
   Gnome extension, which helps you to control some aspects of the eink display.
@@ -339,12 +343,8 @@ tracker. TODO
 
 	* Gnome extension: There are issues when suspend/screen blanking (i.e.,
 	  unloading of the extension is broken)
-	* EBC artifacting
-	* Cover detection ?
-	* Resume/suspend
-	* BT Issues (link to probably-working firmware?)
 
-# Topics
+# Topics to cover here
 
 * DBUS service
 
@@ -353,5 +353,4 @@ tracker. TODO
 
 * The GNOME extension
 * Pen
-* Blocked packages & updates
 * Resources
