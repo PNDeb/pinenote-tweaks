@@ -82,6 +82,16 @@ configured by default in this installation. For manual configuration of the
 repository, please refer to [this part of the image
 Readme.](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specific-debian-repository)
 
+## Drawing Performance is too slow
+
+Multiple things come into play here, and debugging those issues usually is complicated:
+
+* Please note the epd (eink) panel is highly temperature sensitive. Colder temperatures require longer waveforms to excitate the ink particles in the panel, which there leads to slower refresh rates.
+* Xournalpp: There is an older, slighly patched, Xournalpp available. For *some* people, drawing performance increased with that version, for others not. Note that sometimes the background is not properly refreshed in this version, requiring a small scolling action to actually show the background.
+* Make sure to cycle to Quality mode and then back to Performance mode in GNOME. This is done using the P/Q Symbols in the upper status bar. Just press the respective character once to change between modes. You want the P(erformance) mode for drawing.
+* It was reported that the 6.3 kernel version installed on the PineNote provides faster drawing performance (the downside is that potentially in some scenarious you will observe visual artifacts due to some subtle internal queuing bugs)
+
+
 ## Using another partition for /home
 
 Depending on the method of installation, /home is located on the root
@@ -117,6 +127,8 @@ TODO
 * Pen-Button-Press
 
 ### BLE Pen (Buttons)
+
+Note: This is only relevant for the first batch of PineNotes, sold in 2022. The 2024 batch does not have BLE buttons in the pen!
 
 The PineNote Pen interfaces with the PineNote using two interfaces:
 
