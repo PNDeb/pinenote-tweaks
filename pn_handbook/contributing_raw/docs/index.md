@@ -11,6 +11,12 @@ willing to actively help, please drop into the PineNote chat on
 matrix/irc/telegram (see
 [wiki.pine64.org](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms) ).
 
+## What open issues are there?
+
+This is mostly an documentation issue, and information is widely scattered between the chat, the wiki, and the repositories containing the various parts of the Debian image.
+While in the end all general issues for the PineNote should be collected and managed in the wiki, for now a first point of contact is the issue tracker of the Debian image: https://github.com/PNDeb/pinenote-debian-image/issues
+Here you will also find some meta issues that hopefully provide you with enough information to tackle your issues, or find a place to contribute.
+
 ## Documentation
 
 This is always an issue. User-side documentation can always use help. Usually
