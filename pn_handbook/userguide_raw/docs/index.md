@@ -1,4 +1,4 @@
-# Debian Trixie for the Pine64 PineNote
+# Userguide for the Debian-trixie PineNote OS image
 
 ## Introduction
 
@@ -45,13 +45,21 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
 	sudo dpkg-reconfigure locales
  	```
 
+  GNOME localisation can be changed in the settings.
+
 * The status bar at the top contains the refresh button and the PineNote-Helper
   Gnome extension, which helps you to control some aspects of the eink display.
   Both of these items will become important for an effective use of the
   PineNote in a Gnome environment.
 
-* (advanced users) Your PineNote comes partitioned with two operating system partitions (**os1** and **os2**, each ca. 15 GB in size).
-  The default install resides on **os1**, leaving **os2** for experiments, such as other distributions images, etc. If you plan on modifying this installation heavily, a second install to **os2** could help in recovering from serious errors. More information on installing a Debian image to **os2** can be found [here](https://github.com/PNDeb/pinenote-debian-image/blob/trixie/partition_tables/Readme.md).
+* (advanced users) Your PineNote comes partitioned with two operating system
+  partitions (**os1** and **os2**, each ca. 15 GB in size).
+  The default install resides on **os1**, leaving **os2** for experiments, such
+  as other distributions images, etc. If you plan on modifying this
+  installation heavily, a second install to **os2** could help in recovering
+  from serious errors. More information on installing a Debian image to **os2**
+  can be found
+  [here](https://github.com/PNDeb/pinenote-debian-image/blob/trixie/partition_tables/Readme.md).
 
 ## How do I...
 
@@ -59,23 +67,46 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
 	* Koreader is already installed and should be registered for corresponding
 	  file types
 * **Take notes**: Xournalpp is installed on the Pinenote by default.
-  Other note-taking apps to test/consider:
-	* https://github.com/saber-notes/
-	* rnote
-	* syioek (???)
+  See this meta-issue on github for more information and other programs to
+  test: https://github.com/PNDeb/pinenote-debian-image/issues/81
 * Surf the internet using Firefox
 * **Use the Pinenote as an external screen?**:
 	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
-* **Use an external monitor with the Pinenote?**: The Pinenote is not wired to provide external display support via usb-c (this is called [alternate mode](https://en.wikipedia.org/wiki/USB-C#Alternate_modes). Therefore, if you want to use the PineNote as an external display, you will need to use other means.
+* **Use an external monitor with the Pinenote?**: The Pinenote is not wired to
+  provide external display support via usb-c (this is called [alternate
+  mode](https://en.wikipedia.org/wiki/USB-C#Alternate_modes). Therefore, if you
+  want to use the PineNote as an external display, you will need to use other
+  means.
 	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
-   	* (untested) Provided that you are running a newer GNOME installation on your computer, you could try to use gnome remote connections and virtual monitors (https://ubuntuhandbook.org/index.php/2023/07/share-extended-screen-gnome/)
+	* (untested) Provided that you are running a newer GNOME installation on
+	  your computer, you could try to use gnome remote connections and virtual
+	  monitors
+	  (https://ubuntuhandbook.org/index.php/2023/07/share-extended-screen-gnome/)
+
+## The Gnome extension for the PineNote
+
+The PN comes with an extension installed that provides quick access to certain
+pinenote-related functionality.
+Four items are added to the GNOME interface:
+
+* a "global refresh" button right next the system clock (circular arrow)
+* a P/Q performance/quality mode switcher and indicator (to the right of the
+  refresh button)
+* A menu button/indicator, to the right of the mode switcher.
+* An additional backlight slider is also added to the quicksettings menu,
+  opened by clicking/touching the battery symbol in the upper right of the
+  panel
+
+![gnome_extension](img/gnome_extension.png)
 
 ## Updates
 
 Apart from a number of tweaks aimed at producing an improved user experience on
-the PineNote, and a few patched packages, you are running a Debian Trixie
+the PineNote, and a few patched packages, you are running a Debian trixie
 operating system which can be maintained as very other system. Use `apt` or
-`aptitude` to manage you packages. `gnome-software` is also installed and should prompt you within GNOME in regular intervals if software updates are available.
+`aptitude` to manage you packages. `gnome-software` is also installed and
+should prompt you within GNOME in regular intervals if software updates are
+available.
 
 A PineNote package repository is in its early testing phase, and should be
 configured by default in this installation. For manual configuration of the
@@ -84,12 +115,24 @@ Readme.](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specif
 
 ## Drawing Performance is too slow
 
-Multiple things come into play here, and debugging those issues usually is complicated:
+Multiple things come into play here, and debugging those issues usually is
+complicated:
 
-* Please note the epd (eink) panel is highly temperature sensitive. Colder temperatures require longer waveforms to excitate the ink particles in the panel, which there leads to slower refresh rates.
-* Xournalpp: There is an older, slighly patched, Xournalpp available. For *some* people, drawing performance increased with that version, for others not. Note that sometimes the background is not properly refreshed in this version, requiring a small scolling action to actually show the background.
-* Make sure to cycle to Quality mode and then back to Performance mode in GNOME. This is done using the P/Q Symbols in the upper status bar. Just press the respective character once to change between modes. You want the P(erformance) mode for drawing.
-* It was reported that the 6.3 kernel version installed on the PineNote provides faster drawing performance (the downside is that potentially in some scenarious you will observe visual artifacts due to some subtle internal queuing bugs)
+* Please note the epd (eink) panel is highly temperature sensitive. Colder
+  temperatures require longer waveforms to excitate the ink particles in the
+  panel, which there leads to slower refresh rates.
+* Xournalpp: There is an older, slightly patched, Xournalpp available. For
+  *some* people, drawing performance increased with that version, for others
+  not. Note that sometimes the background is not properly refreshed in this
+  version, requiring a small scrolling action to actually show the background.
+* Make sure to cycle to Quality mode and then back to Performance mode in
+  GNOME. This is done using the P/Q Symbols in the upper status bar. Just press
+  the respective character once to change between modes. You want the
+  P(erformance) mode for drawing.
+* It was reported that the 6.3 kernel version installed on the PineNote
+  provides faster drawing performance (the downside is that potentially in some
+  scenarios you will observe visual artifacts due to some subtle internal
+  queuing bugs)
 
 
 ## Using another partition for /home

@@ -90,7 +90,7 @@ current state (color) of a given pixel.
 In general, updating these displays is slow (complete screen updates can take
 seconds!).
 
-However, different waveforms have been developed by the panel producers to
+However, different waveforms have been developed by the panel manufacturers to
 improve response times.
 However, speed is bought at the expensive of quality, and fast waveforms
 exhibit artifacts (remnants of previous images), or can only operate on a
@@ -129,6 +129,39 @@ black and white mode).
 	Please take note of the "screen refresh" button right next to the system
 	clock (the circling arrow). Pressing this button will trigger a screen
 	refresh with the G16 waveform.
+
+
+#### Performance and Quality modes
+
+Apart from the selected waveform, another factor controls the speed of screen
+refreshes: How fast a given waveform is applied to the panel.
+A waveform basically consists of a sequence of excitation states (i.e.,
+excitation voltages, plus, neutral, minus) that need to be applied to each
+pixel of the panel in order to achieve a certain grayscale color of that pixel.
+
+The speed of waveform application is controlled by one of the system clocks.
+The current configuration allows us to switch between two clock speeds for this
+specific clock, resulting in slower or faster application of the waveform.
+The downside of the fast waveform is that, under non-specified conditions,
+visual artifacts were observed.
+
+In order to alleviate these visual issues, switching between those frequencies
+was implemented, denoted as Quality mode and as Performance mode.
+Additionally, the quality mode reconfigures GNOME to send screen updates at a
+slower rate, further reducing the stress on the system, and therefore the
+possibility for visual glitches.
+
+You can switch between both modes by tapping the P (or Q) character in the top
+panel of GNOME.
+
+!!! info
+
+	It is advised to cycle to Q mode and back to P mode before drawing, as the
+	Gnome extension is not (yet) optimized with regard to making sure a given
+	performance state is really in effect!
+
+Please refer to the user-guide section for further, detailed, information on
+the ebc panel and driver.
 
 ### Touch Gestures in Debian
 
