@@ -6,18 +6,27 @@ setup someone who has used Linux before -->
 Welcome to your new PineNote, we hope you enjoy the experience of using the
 PineNote.
 The PineNote comes loaded with a community maintained Debian based distribution
-that has been pre-configured for a reasonble starting point.
+that has been pre-configured for a reasonable starting point.
 Of course, you are welcome to customise your device to suit _you_.
 
 In general, if things are unclear, please take the following actions:
 
 * Read through this handbook (including the other sections)
-* Refer to the (PineNote wiki page)[https://wiki.pine64.org/index.php?title=PineNote]
-* Try the PineNote chat (see [this wiki page](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms) for more information on how to connect).
+* Refer to the [PineNote wiki page](https://wiki.pine64.org/index.php?title=PineNote)
+* Try the PineNote chat (see [this wiki
+  page](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms) for more
+  information on how to connect).
+
+!!! info
+
+	Please read this document completely, as it will provide you with lots of
+	relevant information pertaining to the proper use of your PineNote!
 
 ## Introduction
 
-The Pinenote Debian system is a lightly-modified [Debian trixie](https://www.debian.org/) installation, running GNOME as the graphical user interface.
+The Pinenote Debian system is a lightly-modified [Debian
+trixie](https://www.debian.org/) installation, running GNOME as the graphical
+user interface.
 Usage should be fairly self explanatory, but there is a new menu
 in the top bar of gnome that controls the ePaper (eink) display.
 The display can render high quality greyscale, but due to the technology this
@@ -28,9 +37,14 @@ device.
 The screen features a Wacom digitiser for the pen input, and this is supported
 out of the box.
 
+
 ## Help, my PineNote is not responding!
 
-* The usual first step is to reboot the device. If the system itself is not responding anymore, try turning the PineNote off. This is accomplished by holding the PWR Button 10-12 seconds. After that, you can normally start your device using a short press of the button (1-2 seconds).
+* The usual first step is to reboot the device. If the system itself is not
+  responding anymore, try turning the PineNote off.
+  This is accomplished by holding the PWR Button 10-12 seconds. After that, you
+  can normally start your device using a short press of the button (1-2
+  seconds).
 
 ### WiFi & Bluetooth
 
@@ -100,7 +114,21 @@ The default Gnome environment comes with a simple extension installed that lets
 you change the current panel waveform (as well as enable dithering for the
 black and white mode).
 
-[TODO: image here]
+![gnome_extension](img/gnome_extension.png)
+
+* Use the "Grayscale" mode for high-quality, slow-changing content
+* Use the "BW+Dither" mode for fast-changing, dithered black and white,
+  content. Dithering refers to the representation of colors by using certain
+  black & white pixel patterns. See the [corresponding Wikipedia
+  page](https://en.wikipedia.org/wiki/Dither) for more information.
+* Use the DU4 mode for a four-color representation. This is a good choice for
+  reading books, or slow internet browsing.
+
+!!! info
+
+	Please take note of the "screen refresh" button right next to the system
+	clock (the circling arrow). Pressing this button will trigger a screen
+	refresh with the G16 waveform.
 
 ### Touch Gestures in Debian
 
@@ -120,15 +148,20 @@ multiple years of work from quite a lot of people. Notable mentions:
   pgwipeout, as well as CrystalGamma
 * Special note should be taken of the reverse engineering and development work
   of the EBC driver: Samuel Holland (smaeul), Ralimtek
-* Early installation guides from Dorian and Martyn imensly helped to get people running Linux!
-* early contributors include veapon, DorianRudolph, 0cc4m / occam_razor, UniversalSuperBox, counterpillow and caleb, iMartyn, danct12
+* Early installation guides from Dorian and Martyn imensly helped to get people
+  running Linux!
+* early contributors include veapon, DorianRudolph, 0cc4m / occam_razor,
+  UniversalSuperBox, counterpillow and caleb, iMartyn, danct12
 * doc/wiki contributions by funeral, aarondabomb
-* talkpadk provided us with a nice, curated, repo of the upstream u-boot (https://github.com/talpadk/u-boot-pinenote), upon which the currently-used u-boot version is built upon (https://github.com/talpadk/u-boot-pinenote).
+* talkpadk provided us with a nice, curated, repo of the upstream u-boot
+  (https://github.com/talpadk/u-boot-pinenote), upon which the currently-used
+  u-boot version is built upon (https://github.com/talpadk/u-boot-pinenote).
 * Eugen Răhăian created the first, initial version of the Debian image using
   *debos* (https://salsa.debian.org/eugenrh/pinenote-debian-recipes).
   This version was then extended to include the GNOME interface by
   Maximilian Weigand (https://github.com/PNDeb/pinenote-debian-image).
-* Eugen Răhăian also did a lot of (destructive) testing of the screen components with regard to UV exposure.
+* Eugen Răhăian also did a lot of (destructive) testing of the screen
+  components with regard to UV exposure.
 * MichiMolle created a beautiful GNOME and GTK theme for the Pinenote
   (https://github.com/MichiMolle/PNEink)
 * Cover designs by Funeral (https://wiki.pine64.org/wiki/PineNote_Press)
