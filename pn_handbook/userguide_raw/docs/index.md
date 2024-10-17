@@ -134,6 +134,9 @@ complicated:
   scenarios you will observe visual artifacts due to some subtle internal
   queuing bugs)
 
+See also [this github
+issue](https://github.com/PNDeb/pinenote-debian-image/issues/81) for more
+information.
 
 ## Using another partition for /home
 
@@ -152,17 +155,29 @@ Example to switch /home to /dev/mmcblk0p7:
 
 ## Switching the default boot partitions
 
-TODO
+You need shell root access, either via ssh, or via the UART dongle
+
+* mount the uboot_env partition:
+
+			mount /uboot_env
+
+* use the provided shell script to change the boot order:
+
+			cd /root
+			./uboot_change_bootmenu.sh
 
 ## Documentation for apps/systems
 
 ### Wakeup-Sources
 
-* Cover
+The PineNote can be woken up from suspend from these sources:
+
+* Cover opening
 * Bluetooth
-* Power cable
-* Button
-* Touch screen
+* Power cable plug-in/plug-out
+* PWR Button
+* Touch screen (not configured by default)
+* (batch 1 from 2022): BLE Buttons on the pen
 
 ### Sleep sources
 
@@ -171,7 +186,10 @@ TODO
 
 ### BLE Pen (Buttons)
 
-Note: This is only relevant for the first batch of PineNotes, sold in 2022. The 2024 batch does not have BLE buttons in the pen!
+!!! info
+
+	This is only relevant for the first batch of PineNotes, sold in 2022. The
+	2024 batch does not have BLE buttons in the pen!
 
 The PineNote Pen interfaces with the PineNote using two interfaces:
 
