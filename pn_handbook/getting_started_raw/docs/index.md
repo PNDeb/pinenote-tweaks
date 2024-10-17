@@ -28,6 +28,10 @@ device.
 The screen features a Wacom digitiser for the pen input, and this is supported
 out of the box.
 
+## Help, my PineNote is not responding!
+
+* The usual first step is to reboot the device. If the system itself is not responding anymore, try turning the PineNote off. This is accomplished by holding the PWR Button 10-12 seconds. After that, you can normally start your device using a short press of the button (1-2 seconds).
+
 ### WiFi & Bluetooth
 
 The PineNote can be connected to WiFi by using the menu in the top right hand
