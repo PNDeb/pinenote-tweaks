@@ -41,6 +41,20 @@ wiki (linked above).
 
 ## Upstreaming
 
-There are active, ongoing, efforts to upstream missing driver parts for the
-PineNote to the official kernel. If you want to help, please get in touch via
-the chat.
+There are ongoing efforts to get the missing pieces of the PineNote support
+in the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) and
+[U-Boot](https://en.wikipedia.org/wiki/Das_U-Boot) boot loader added to the
+[mainline Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel#Mainline_Linux)
+and the official U-Boot source repository, which is a process known as upstreaming.
+This includes the EBC kernel driver for the e-ink panel, various bugfixes, and
+other small improvements.  With everything upstreamed, the entire
+[Device Tree](https://en.wikipedia.org/wiki/Devicetree) data for the PineNote,
+all the required kernel drivers, complete boot loader support, and the related
+configuration will become part of the mainline Linux kernel and U-Boot, ensuring
+that all Linux distributions can support the PineNote as a "first-class citizen",
+and ensuring that the PineNote will always support the latest available version
+of the Linux kernel and U-Boot, preventing any kind of obsolescence in that regard.
+
+If you want to help with these efforts or contribute in any way, please reach
+out in the #pinenote channel on one of the
+[community chat platfors](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms).
