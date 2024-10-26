@@ -378,44 +378,22 @@ reboot the pinenote once):
 
 ### Xournalpp/Writing
 
-* At this point, despite disabling animations, GNOME still shows the spinning
-  animation in the panel when xournalpp is started. This prevents proper and
-  fast drawing of screen regions. For best experience, wait until the loading
-  animation stops before you start drawing/writing.
 * Switch to "BW+Dither" mode when working in Xpp
-* The default configuration uses evsieve to merge events from the pen (for
-  drawing) and the pen buttons. This is a solution to the problem that the pen
-  input and the pen buttons are completely independent systems and therefore
-  register as different inputs in the system.
-
-  The evsieve solution add something like 15 ms lag to the input (according to
-  the evsieve readme). You can disable this approach by running (in a root
-  shell):
-
-	systemctl stop evsieve.service
-	systemctl disable evsieve.service
-
-  Make sure to restart Xpp and to reconfigure the input sources in the
-  settings.
-* By default the touch screen is disabled as an input for Xpp. You need to
-  activate it in the settings in order to scroll using touch gestures.
-* If the pen buttons are configured, holding down the button nearest to the tip
-  should allow you to scroll using the pen.
-* (depending on XPP version) After both pen and touch scrolling a global
-  refresh is triggered
 * Kinetic scrolling needs to be disabled because GTK3's implementation
   interferes with some aspect of touch input handling, including touch cancel
   events
 
-## What is not working?
+# Firmware Blobs
 
-In general, for an up-to-date list of open issues, refer to PNDEB-issue
-tracker. TODO
+To the best of our knowledge, the following non-open code is run as firmware on
+your PineNote:
 
-* Open Issues
+* rk43566 RAM timings/TF-A
+* Bluetooth/Wifi firmware
+* Touchscreen firmware
+* Firmware on the second BLE chip, used to connect the Pen buttons of batch 1
 
-	* Gnome extension: There are issues when suspend/screen blanking (i.e.,
-	  unloading of the extension is broken)
+Ask the PineNote chat for more information.
 
 # Topics to cover here
 
@@ -425,5 +403,5 @@ tracker. TODO
 	* [to implement] handle pen pairing/unpairing
 
 * The GNOME extension
-* Pen
+* BLE Pen (Batch 1 from 2022 only)
 * Resources

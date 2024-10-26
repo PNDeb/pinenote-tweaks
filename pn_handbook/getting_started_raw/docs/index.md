@@ -46,6 +46,27 @@ out of the box.
   can normally start your device using a short press of the button (1-2
   seconds).
 
+## IMPORTANT ! Store your individual VCOM voltage now!
+
+Each eink (ebc) panel must be operated with a specific biasing voltage, the
+so-called VCOM voltage. At this point, we do not have the capabilities to
+measure this voltage on a given PineNote.
+Therefore, it is important to read out the factory-set vcom voltage once and
+note it down.
+You probably won't need it in the future, but this could be relevant in case
+you manage to overwrite the provided u-boot boot loader and accidently flash a
+boot loader that overwrites the VCOM voltage.
+
+You can ready out the vcom voltage by executing the following command in a
+shell (either in GNOME, using the UART console, or via ssh):
+
+	cat /sys/module/tps65185_regulator/drivers/i2c\:tps65185/3-0068/regulator/regulator.29/microvolts
+
+!!!info
+
+	Efforts are ongoing to create linux drivers that allow (re-)measurement of the
+	VCOM voltage. Ask the chat for more information.
+
 ### WiFi & Bluetooth
 
 The PineNote can be connected to WiFi by using the menu in the top right hand
