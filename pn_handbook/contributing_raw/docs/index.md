@@ -3,7 +3,7 @@
 ## Introduction
 
 The software side of the PineNote is purely community driven.
-It follows that all aspects of this software ecosystem needs help, to varying
+It follows that all aspects of this software ecosystem need help, to varying
 degrees.
 
 In the following some long-standing themes are discussed. However, if you are
@@ -31,7 +31,7 @@ are completely missing from the documentation.
 Traditionally, technical, as well as user-focussed, information can be found in
 the [Pine wiki](https://wiki.pine64.org/wiki/Main_Page).
 However, the PineNote comes with a separate user manual (this document you are
-reading right now), which resides in this github
+reading right now), which resides in this GitHub
 [repository](https://github.com/PNDeb/pinenote-tweaks/tree/main/pn_handbook).
 
 Issues and pull-requests are very welcome!
@@ -41,18 +41,17 @@ wiki (linked above).
 
 ## Upstreaming
 
-There are ongoing efforts to get the missing pieces of the PineNote support
-in the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) and
-[U-Boot](https://en.wikipedia.org/wiki/Das_U-Boot) boot loader added to the
-[mainline Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel#Mainline_Linux)
-and the official U-Boot source repository, which is a process known as upstreaming.
-This includes the EBC kernel driver for the e-ink panel, various bugfixes, and
+There are ongoing efforts to get the missing pieces of the PineNote software
+in the [mainline Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel#Mainline_Linux)
+and the [U-Boot](https://en.wikipedia.org/wiki/Das_U-Boot) boot loader.
+This is a process known as upstreaming.
+This includes the EBC kernel driver for the e-ink panel, various bugfixes and
 other small improvements.  With everything upstreamed, the entire
 [Device Tree](https://en.wikipedia.org/wiki/Devicetree) data for the PineNote,
-all the required kernel drivers, complete boot loader support, and the related
+all the required kernel drivers, complete boot loader support and the related
 configuration will become part of the mainline Linux kernel and U-Boot, ensuring
-that all Linux distributions can support the PineNote as a "first-class citizen",
-and ensuring that the PineNote will always support the latest available version
+that all Linux distributions can support the PineNote as a "first-class citizen".
+This ensures that the PineNote will always support the latest available version
 of the Linux kernel and U-Boot, preventing any kind of obsolescence in that regard.
 
 If you want to help with these efforts or contribute in any way, please reach
