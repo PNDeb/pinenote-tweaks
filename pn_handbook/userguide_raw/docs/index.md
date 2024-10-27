@@ -1,11 +1,11 @@
-# Userguide for the Debian-trixie PineNote OS image
+# Userguide for the Debian Trixie PineNote OS image
 
 ## Introduction
 
 Hi there, nice of you to install this Debian image on your PineNote!
 
 Before you begin, please bear in mind that the PineNote, and this image, is
-aimed a experienced users and developers, and many things need manual tweaking
+aimed at experienced users and developers and many things need manual tweaking
 or do not just work yet.
 However, many things also work, and you can take control of quite a lot of
 things.
@@ -22,7 +22,7 @@ Remember, software for the PineNote is created by the community, for the
 community!
 
 Probably the best and fastest way to get help is to join the PineNote chat via
-Matrix, irc, or Discord. Please refer to the wiki page for more information on
+Matrix, IRC or Discord. Please refer to the wiki page for more information on
 chats and forums: [Pine64
 Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
 
@@ -48,11 +48,11 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
   GNOME localisation can be changed in the settings.
 
 * The status bar at the top contains the refresh button and the PineNote-Helper
-  Gnome extension, which helps you to control some aspects of the eink display.
+  GNOME extension, which helps you to control some aspects of the eink display.
   Both of these items will become important for an effective use of the
-  PineNote in a Gnome environment.
+  PineNote in a GNOME environment.
 
-* (advanced users) Your PineNote comes partitioned with two operating system
+* (advanced users) Your PineNote comes partitioned with two Operating System
   partitions (**os1** and **os2**, each ca. 15 GB in size).
   The default install resides on **os1**, leaving **os2** for experiments, such
   as other distributions images, etc. If you plan on modifying this
@@ -66,27 +66,27 @@ Wiki](https://wiki.pine64.org/wiki/Main_Page#Community_and_Support).
 * **Read a book (epub)/pdf**:
 	* Koreader is already installed and should be registered for corresponding
 	  file types
-* **Take notes**: Xournalpp is installed on the Pinenote by default.
+* **Take notes**: Xournalpp is installed on the PineNote by default.
   See this meta-issue on github for more information and other programs to
   test: https://github.com/PNDeb/pinenote-debian-image/issues/81
 * Surf the internet using Firefox
-* **Use the Pinenote as an external screen?**:
+* **Use the PineNote as an external screen?**:
 	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
-* **Use an external monitor with the Pinenote?**: The Pinenote is not wired to
+* **Use an external monitor with the PineNote?**: The PineNote is not wired to
   provide external display support via usb-c (this is called [alternate
   mode](https://en.wikipedia.org/wiki/USB-C#Alternate_modes). Therefore, if you
   want to use the PineNote as an external display, you will need to use other
   means.
 	* (untested) The Weylus project could be of help: https://github.com/H-M-H/Weylus
 	* (untested) Provided that you are running a newer GNOME installation on
-	  your computer, you could try to use gnome remote connections and virtual
+	  your computer, you could try to use GNOME remote connections and virtual
 	  monitors
 	  (https://ubuntuhandbook.org/index.php/2023/07/share-extended-screen-gnome/)
 
-## The Gnome extension for the PineNote
+## The GNOME extension for the PineNote
 
 The PN comes with an extension installed that provides quick access to certain
-pinenote-related functionality.
+PineNote-related functionality.
 Four items are added to the GNOME interface:
 
 * a "global refresh" button right next the system clock (circular arrow)
@@ -102,23 +102,22 @@ Four items are added to the GNOME interface:
 ## Updates
 
 Apart from a number of tweaks aimed at producing an improved user experience on
-the PineNote, and a few patched packages, you are running a Debian trixie
-operating system which can be maintained as very other system. Use `apt` or
+the PineNote, and a few patched packages, you are running a Debian Trixie
+Operating System which can be maintained as every other system. Use `apt` or
 `aptitude` to manage you packages. `gnome-software` is also installed and
 should prompt you within GNOME in regular intervals if software updates are
 available.
 
-A PineNote package repository is in its early testing phase, and should be
-configured by default in this installation. For manual configuration of the
-repository, please refer to [this part of the image
-Readme.](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specific-debian-repository)
+A PineNote package repository is configured by default in this installation.
+For manual configuration of the repository, please refer to [this part of the image
+Readme](https://github.com/PNDeb/pinenote-debian-image/tree/dev#pinenote-specific-debian-repository).
 
 ## Drawing Performance is too slow
 
 Multiple things come into play here, and debugging those issues usually is
 complicated:
 
-* Please note the epd (eink) panel is highly temperature sensitive. Colder
+* Please note the EPD (eink) panel is highly temperature sensitive. Colder
   temperatures require longer waveforms to excitate the ink particles in the
   panel, which there leads to slower refresh rates.
 * Xournalpp: There is an older, slightly patched, Xournalpp available. For
@@ -216,7 +215,7 @@ Afterwards, check that the pen is working by checking the pen attributes:
 
 ### EBC Kernel Driver
 
-The EBC subsystem controls the eink (or epd) display and is one of components
+The EBC subsystem controls the eink (or EPD) display and is one of components
 which require most tweaking for each user.
 
 	* ioctls
@@ -332,7 +331,7 @@ A value of 4 is the default.
 		8: @DRM_EPD_WF_GLD16: Less flashy 16-level grayscale, plus anti-ghosting
 
 * (side note): Based on information from drivers/gpu/drm/drm_epd_helper.c, the
-  Pinenote uses eps lut form 0x19, which associated waveform types with the
+  PineNote uses eps lut form 0x19, which associates waveform types with the
   luts stored in the file as:
 
 		.versions = {
@@ -354,7 +353,7 @@ A value of 4 is the default.
 
   For example, if you want to inspect/modify the A2 waveform, this corresponds
   to the 7th waveform in the lut file (index 6), but is activated via
-  **default_waveoform** by writing value 1.
+  **default_waveform** by writing value 1.
 
 ### Trimming the A2 waveform
 
@@ -362,10 +361,10 @@ You can trim the A2 waveform for improved writing performance, with the
 downside that black sometimes is displayed in gray tones.
 
 The supplied script is very slow and unoptimized and therefore not run
-automatically (run time on pinenote ca. 20 minutes).
+automatically (run time on PineNote ca. 20 minutes).
 
 Call these command in a root shell to trim the A2 waveform (note: this will
-reboot the pinenote once):
+reboot the PineNote once):
 
 	cd /root
 	# this command should take ca. 20 minutes !!!
@@ -378,7 +377,7 @@ reboot the pinenote once):
 
 ### Xournalpp/Writing
 
-* Switch to "BW+Dither" mode when working in Xpp
+* Switch to "BW+Dither" mode when working in Xournalpp
 * Kinetic scrolling needs to be disabled because GTK3's implementation
   interferes with some aspect of touch input handling, including touch cancel
   events
@@ -389,7 +388,7 @@ To the best of our knowledge, the following non-open code is run as firmware on
 your PineNote:
 
 * rk43566 RAM timings/TF-A
-* Bluetooth/Wifi firmware
+* Bluetooth/Wi-Fi firmware
 * Touchscreen firmware
 * Firmware on the second BLE chip, used to connect the Pen buttons of batch 1
 
@@ -399,7 +398,7 @@ Ask the PineNote chat for more information.
 
 * DBUS service
 
-	* contrl ebc driver
+	* control ebc driver
 	* [to implement] handle pen pairing/unpairing
 
 * The GNOME extension
