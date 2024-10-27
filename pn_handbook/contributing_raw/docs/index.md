@@ -58,3 +58,24 @@ of the Linux kernel and U-Boot, preventing any kind of obsolescence in that rega
 If you want to help with these efforts or contribute in any way, please reach
 out in the #pinenote channel on one of the
 [community chat platfors](https://wiki.pine64.org/wiki/Main_Page#Chat_Platforms).
+
+## Custom Software
+
+# Kernel
+
+The kernel currently used for the PineNote is maintained here:
+
+https://github.com/m-weigand/linux
+
+Look for branches beginning with "branch_pinenote_" to find ready-to-use
+branches. Other branches contain individual patches for certain subsystems.
+
+# Patched Debian Packages
+
+Not many Debian packages need patching to get the PineNote running:
+
+* **mesa** must be patched to allow 3D hardware acceleration in combination
+  with the ebc driver.
+* we use a slightly patched **gnome-shell** package to allow for better
+  integration of certain ebc-related tasks. These are fully optional
+  modifications.

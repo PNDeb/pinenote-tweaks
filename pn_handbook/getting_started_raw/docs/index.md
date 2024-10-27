@@ -64,6 +64,12 @@ shell (either in GNOME, using the UART console, or via ssh):
 
 !!!info
 
+	The community is still gaining experience with actually-observed VCOM
+	values. We would appreciate it very much if you would be willing to share
+	your VCOM values in the PineNote chat!
+
+!!!info
+
 	Efforts are ongoing to create linux drivers that allow (re-)measurement of the
 	VCOM voltage. Ask the chat for more information.
 
