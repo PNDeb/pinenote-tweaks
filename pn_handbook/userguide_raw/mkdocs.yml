@@ -1,9 +1,0 @@
-site_name: Pinenote User Guide
-theme:
-  name: material
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - toc:
-      permalink: "#"

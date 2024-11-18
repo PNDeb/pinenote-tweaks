@@ -21,11 +21,6 @@ cd pn_default_xpp_config
 dpkg-buildpackage -us -uc
 cd ..
 
-cd pn_handbook
-./generate_html.sh
-dpkg-buildpackage -us -uc
-cd ..
-
 # ########################################################################## #
 # Move packages to release subdirectory
 
