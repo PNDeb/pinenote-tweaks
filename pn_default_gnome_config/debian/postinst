@@ -20,6 +20,7 @@ set -e
 
 case "$1" in
     configure)
+	chown -R Debian-gdm:Debian-gdm /var/lib/gdm3/.config
     dconf update
     ;;
 
