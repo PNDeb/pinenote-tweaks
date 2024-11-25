@@ -1,10 +1,16 @@
+pn-suspend-on-cover (1.2) unstable; urgency=medium
+
+  * Maintenance release, nothing changed in functionality
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Mon, 25 Nov 2024 14:10:43 +0100
+
 pn-suspend-on-cover (1.1) unstable; urgency=medium
 
   * use systemctl suspend to go to sleep
 
  -- Maximilian Weigand <mweigand@mweigand.net>  Tue, 01 Aug 2023 12:59:39 +0200
 
-pinenote-suspend-on-cover (1.0) UNRELEASED; urgency=medium
+pinenote-suspend-on-cover (1.0) trixie; urgency=medium
 
   * Initial release.
 
