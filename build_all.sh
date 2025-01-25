@@ -1,5 +1,12 @@
 #!/usr/bin/env sh
 
+cd pn_basic_support
+dpkg-buildpackage -us -uc
+cd ..
+
+cd pn_custom_repo_and_keyring
+dpkg-buildpackage -us -uc
+cd ..
 
 cd pn_default_gnome_config
 dpkg-buildpackage -us -uc
