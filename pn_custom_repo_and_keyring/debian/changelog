@@ -1,5 +1,15 @@
-pinenote-custom-repo-and-keyring (1.0) UNRELEASED; urgency=medium
+pinenote-custom-repo-and-keyring (1.1) unstable; urgency=medium
 
-  * Initial release.
+  * Add gpg signing key nr 5: B14DB6BDEF24D4DD6B1E4111E0B6906147A709C6
+    Maximilian Weigand (PineNote Signing Key 5) <mweigand@mweigand.net>
+  * Activate source repository by default
 
- -- Maximilian Weigand <Maximilian Weigand <mweigand@mweigand.net>>  Sat, 21 Sep 2024 15:30:11 +0200
+ -- Maximilian Weigand <mweigand@mweigand.net>  Sat, 25 Jan 2025 09:39:21 +0100
+
+pinenote-custom-repo-and-keyring (1.0) unstable; urgency=medium
+
+  * This was already released back in October, but the Debian package version
+    was not properly updated
+  * Contains the gpg key nr 4
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Sat, 25 Jan 2025 09:38:21 +0100
