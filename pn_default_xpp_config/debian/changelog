@@ -1,3 +1,9 @@
+pn-defaut-xpp-config (1.3) unstable; urgency=medium
+
+  * Maintenance release
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Sat, 25 Jan 2025 20:41:22 +0100
+
 pn-defaut-xpp-config (1.2) unstable; urgency=medium
 
   * Enter/leave A2 waveform when detecting the pen
