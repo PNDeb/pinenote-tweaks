@@ -1,0 +1,20 @@
+Source: pinenote-python-scripts
+Section: unknown
+Priority: optional
+Maintainer: Maximilian Weigand <Maximilian Weigand <mweigand@mweigand.net>>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.2
+Homepage: https://github.com/PNDeb/pinenote-tweaks
+#Vcs-Browser: https://salsa.debian.org/debian/pinenote-python-scripts
+#Vcs-Git: https://salsa.debian.org/debian/pinenote-python-scripts.git
+
+Package: pinenote-python-scripts
+Architecture: all
+Depends:
+ ${misc:Depends},
+ python3-png,
+ python3-pillow,
+Description: Various PineNote-related scripts
+ Everything that can be executed and is useful for the Pine64 PineNote

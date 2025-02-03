@@ -1,0 +1,5 @@
+pinenote-python-scripts (1.0-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Maximilian Weigand <Maximilian Weigand <mweigand@mweigand.net>>  Sat, 11 Jan 2025 15:44:50 +0100
