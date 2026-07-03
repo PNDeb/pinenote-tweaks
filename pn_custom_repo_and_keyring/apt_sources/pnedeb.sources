@@ -5,6 +5,7 @@ Components: main
 Signed-By:
   /usr/share/keyrings/pinenote_repo_key_4.gpg
   /usr/share/keyrings/pinenote_repo_key_5.gpg
+  /usr/share/keyrings/pinenote_repo_key_6.gpg
 
 Types: deb deb-src
 URIs: http://pinenote.mweigand.net/repo_pn_testing/
@@ -13,3 +14,4 @@ Components: main
 Signed-By:
   /usr/share/keyrings/pinenote_repo_key_4.gpg
   /usr/share/keyrings/pinenote_repo_key_5.gpg
+  /usr/share/keyrings/pinenote_repo_key_6.gpg

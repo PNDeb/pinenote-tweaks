@@ -1,3 +1,10 @@
+pinenote-custom-repo-and-keyring (1.2) stable; urgency=medium
+
+  * Add gpg signing key nr 6: 81EF8771285ED94C2E1EF2F69A605C3495B1AC3C
+    Maximilian Weigand (PineNote Signing Key 6) <mweigand@mweigand.net>
+
+ -- Maximilian Weigand <mweigand@mweigand.net>  Thu, 02 Jul 2026 13:32:38 +0200
+
 pinenote-custom-repo-and-keyring (1.1) unstable; urgency=medium
 
   * Add gpg signing key nr 5: B14DB6BDEF24D4DD6B1E4111E0B6906147A709C6
