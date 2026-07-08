@@ -7,10 +7,10 @@ git clone https://github.com/PNDeb/pinenote-tweaks.git
 cd pinenote-tweaks
 
 # build the handbook
-cd pn_handbook
-./generate_html.sh
-cp -r files/etc/greeter/html /github/home/handbook
-cd ..
+# cd pn_handbook
+# ./generate_html.sh
+# cp -r files/etc/greeter/html /github/home/handbook
+# cd ..
 # handbook end
 
 ./build_all.sh
