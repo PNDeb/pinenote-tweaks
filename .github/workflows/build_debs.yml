@@ -90,7 +90,7 @@ jobs:
         with:
           path: artifacts/
       - name: Make release
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@v3.0.1
         with:
           draft: true
           files: |
