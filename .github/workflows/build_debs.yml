@@ -19,7 +19,7 @@ jobs:
   #     run: ./build_all.sh
 
   #   - name: Artifacts
-  #     uses: actions/upload-artifact@v3
+  #     uses: actions/upload-artifact@v7
   #     with:
   #       name: PineNote-Tweaks
   #       path: release/*
@@ -32,7 +32,7 @@ jobs:
         id: compile-mesa-in-docker
         uses: PNDeb/pinenote-tweaks@main
       - name: Upload files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: pinenote-tweaks-debs
           path: ${{ runner.temp }}/_github_home/release
@@ -84,7 +84,7 @@ jobs:
       - build_debs
     steps:
       - name: Clone workflow repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: Download image artifacts
         uses: actions/download-artifact@v3
         with:
