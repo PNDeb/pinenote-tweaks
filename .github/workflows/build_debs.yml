@@ -96,4 +96,4 @@ jobs:
         with:
           draft: true
           files: |
-            artifacts/pinenote-tweaks-debs/*
+            artifacts/*
