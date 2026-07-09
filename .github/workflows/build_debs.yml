@@ -89,6 +89,8 @@ jobs:
         uses: actions/download-artifact@v8
         with:
           path: artifacts/
+      - run: ls -R artifacts/
+      - run: tree artifacts/
       - name: Make release
         uses: softprops/action-gh-release@v3.0.1
         with:
